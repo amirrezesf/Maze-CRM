@@ -1,5 +1,5 @@
 <div align="center">
-   <img src="app/assets/gif/logo.gif" alt="Maze CRM logo" width="112" />
+   <img src="./Banner.png" alt="Maze CRM logo"  />
    <h1>Maze CRM</h1>
    <p><strong>سامانه یکپارچه مدیریت آموزش، فروش و داوطلبان ماز</strong></p>
    <p>A focused, RTL CRM dashboard for managing sales, subscriptions, candidates, exams, and support workflows.</p>
@@ -9,6 +9,9 @@
       <img src="https://img.shields.io/badge/TypeScript-enabled-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
       <img src="https://img.shields.io/badge/Direction-RTL-334155?style=flat-square" alt="RTL" />
    </p>
+   <p>
+      <a href="https://amirrezesf.github.io/Maze-CRM/">View the live demo</a>
+   </p>
 </div>
 
 <br />
@@ -16,6 +19,8 @@
 ## Overview
 
 Maze CRM is a Nuxt 4 dashboard for the operational side of an education business. The interface is designed for Persian-speaking teams and uses a right-to-left layout, Persian typography, sales visualizations, structured data views, and quick access to common CRM workflows.
+
+**Live demo:** [amirrezesf.github.io/Maze-CRM](https://amirrezesf.github.io/Maze-CRM/)
 
 The application currently ships as a polished front-end experience with simulated login behavior and locally persisted first-login state. It is a strong foundation for connecting real authentication, APIs, and production data services.
 
@@ -81,6 +86,8 @@ For a statically generated build:
 ```bash
 npm run generate
 ```
+
+Every push to `main` is automatically generated and deployed to GitHub Pages through [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
 
 ## Application routes
 

@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     host: "0.0.0.0"
   },
   nitro: {
-    preset: "node-server"
+    preset: "github-pages"
   },
   modules: ["@nuxtjs/tailwindcss"],
   vue: {
@@ -34,6 +34,8 @@ export default defineNuxtConfig({
     }
   },
   app: {
+    baseURL: '/Maze-CRM',
+    
     head: {
       title: "CRM Nuxt - سامانه آموزش و فروش ماز",
       meta: [
