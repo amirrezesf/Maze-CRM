@@ -321,7 +321,7 @@ onMounted(() => {
             class="flex items-center gap-2.5 p-1.5 pr-2 sm:pr-3 rounded-2xl bg-slate-100/90 hover:bg-blue-50 border border-slate-200/70 transition group cursor-pointer"
           >
             <div class="text-right hidden sm:block">
-              <p class="text-xs font-bold text-slate-800 group-hover:text-blue-600 leading-tight">دکتر اسفندیاری</p>
+              <p class="text-xs font-bold text-slate-800 group-hover:text-blue-600 leading-tight">دکتر محمدی</p>
               <p class="text-[10px] text-emerald-600 font-medium">مشاور ارشد ماز • آنلاین</p>
             </div>
             <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center text-xs font-bold shadow-sm ring-2 ring-emerald-500/50">
@@ -354,7 +354,7 @@ onMounted(() => {
                   MA
                 </div>
                 <div>
-                  <h4 class="text-xs font-bold text-slate-900 kalemeh">دکتر امیررضا اسفندیاری</h4>
+                  <h4 class="text-xs font-bold text-slate-900 kalemeh">دکتر امیررضا محمدی</h4>
                   <p class="text-[10px] text-slate-400">کد پرسنلی: MZ-8492</p>
                 </div>
               </div>

@@ -43,7 +43,7 @@ const performers = ref<Performer[]>([
   },
   {
     rank: 3,
-    name: 'دکتر امیررضا اسفندیاری',
+    name: 'دکتر امیررضا محمدی',
     branch: 'شیراز (ملاصدرا)',
     role: 'سرپرست مشاوره و هدایت تحصیلی',
     diamondCount: 46,
@@ -197,7 +197,7 @@ const filteredPerformers = computed(() => {
           🥉
         </div>
         <span class="text-[11px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-full mb-1">رتبه سوم</span>
-        <h3 class="kalemeh text-lg font-black text-slate-900">دکتر امیررضا اسفندیاری</h3>
+        <h3 class="kalemeh text-lg font-black text-slate-900">دکتر امیررضا محمدی</h3>
         <p class="text-xs text-blue-600 font-medium mb-3">سرپرست هدایت تحصیلی و فروش</p>
         <div class="w-full bg-slate-50 rounded-2xl p-3 grid grid-cols-2 gap-2 text-xs border border-slate-100">
           <div>

@@ -22,7 +22,7 @@
           </div>
           <div>
             <span class="text-[11px] text-slate-400 block">نام و عنوان سازمانی</span>
-            <span class="text-xs font-bold text-slate-800">امیررضا اسفندیاری (سرپرست هدایت تحصیلی)</span>
+            <span class="text-xs font-bold text-slate-800">امیررضا محمدی (سرپرست هدایت تحصیلی)</span>
           </div>
         </div>
         <span class="text-xs text-emerald-600 font-bold">دائم</span>
@@ -50,7 +50,7 @@
           </div>
           <div>
             <span class="text-[11px] text-slate-400 block">ایمیل سازمانی ماز</span>
-            <span class="text-xs font-bold text-slate-800 font-mono">esfandiari@biomaze.ir</span>
+            <span class="text-xs font-bold text-slate-800 font-mono">@biomaze.ir</span>
           </div>
         </div>
         <button class="text-xs text-slate-400 hover:text-slate-600">کپی</button>

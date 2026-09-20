@@ -33,7 +33,7 @@ const bestPerformers: BestPerformer[] = [
   },
   {
     id: 3,
-    name: 'دکتر امیررضا اسفندیاری',
+    name: 'دکتر امیررضا محمدی',
     role: 'مشاور ارشد هدایت تحصیلی',
     course: 'اشتراک الماس دوازدهم تجربی',
     salesCount: 29,

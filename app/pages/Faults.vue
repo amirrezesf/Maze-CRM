@@ -32,7 +32,7 @@ const tickets = ref<Ticket[]>([
     priority: 'urgent',
     status: 'pending',
     time: '۱۵ دقیقه پیش',
-    advisor: 'دکتر اسفندیاری'
+    advisor: 'دکتر محمدی'
   },
   {
     id: 'TK-8491',
@@ -76,7 +76,7 @@ const tickets = ref<Ticket[]>([
 ]);
 
 const supportStaff = [
-  { name: 'دکتر امیررضا اسفندیاری', role: 'سرپرست مشاوران ماز', status: 'آنلاین', count: '۴ پرونده' },
+  { name: 'دکتر امیررضا محمدی', role: 'سرپرست مشاوران ماز', status: 'آنلاین', count: '۴ پرونده' },
   { name: 'مهندس نوید رضوی', role: 'پشتیبان فنی سامانه آزمون', status: 'آنلاین', count: '۲ پرونده' },
   { name: 'زهرا موسوی', role: 'کارشناس تحویل مرسولات پستی', status: 'مشغول', count: '۶ پرونده' },
   { name: 'سجاد کمالی', role: 'امور مالی و تسویه حساب‌ها', status: 'آفلاین', count: '۰ پرونده' },

@@ -29,7 +29,7 @@
         </span>
       </div>
 
-      <h2 class="kalemeh text-xl font-black text-slate-900 mb-1">دکتر امیررضا اسفندیاری</h2>
+      <h2 class="kalemeh text-xl font-black text-slate-900 mb-1">دکتر امیررضا محمدی</h2>
       <p class="text-xs text-blue-600 font-bold mb-2">مشاور ارشد هدایت تحصیلی و فروش ماز</p>
       <div class="flex items-center gap-2 text-xs text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
         <ion-icon name="location-outline" class="text-blue-600"></ion-icon>

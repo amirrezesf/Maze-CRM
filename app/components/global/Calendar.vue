@@ -83,7 +83,7 @@ function getBiomazeEventForDay(dayNumber: number, weekdayNum: number): DayEvent 
     const workshops = ['کلاس آنلاین زیست', 'کارگاه دوپینگ شیمی', 'تحلیل تست‌های کنکور', 'وبینار ریاضی تجربی']
     const workshop = workshops[dayNumber % workshops.length]
     return {
-      title: workshop,
+      title: workshop ?? '',
       type: 'class',
       badgeText: 'کلاس آنلاین',
       badgeClass: 'bg-purple-100 text-purple-700 border border-purple-200 font-semibold',
@@ -110,7 +110,7 @@ function getBiomazeEventForDay(dayNumber: number, weekdayNum: number): DayEvent 
       type: 'shift',
       badgeText: 'پشتیبانی فنی',
       badgeClass: 'bg-sky-100 text-sky-800 border border-sky-200 font-medium',
-      counselor: 'امیررضا اسفندیاری',
+      counselor: 'امیررضا محمدی',
       time: '۱۷:۰۰ - ۲۲:۰۰'
     }
   }
@@ -236,7 +236,7 @@ function onSelectDay(day: CalendarDay, event: MouseEvent) {
           </button>
 
           <span class="px-3 text-xs sm:text-sm font-extrabold text-slate-800 kalemeh min-w-[110px] text-center">
-            {{ currentMonthName }} {{ toPersianDigits(currentYear.value) }}
+            {{ currentMonthName }} {{ toPersianDigits(currentYear) }}
           </span>
 
           <button

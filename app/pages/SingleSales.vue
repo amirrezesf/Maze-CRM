@@ -129,7 +129,7 @@ function printInvoice() {
           </div>
           <div class="flex justify-between py-1">
             <span class="text-slate-500">مشاور ثبت‌کننده:</span>
-            <span class="font-bold text-blue-600">دکتر امیررضا اسفندیاری</span>
+            <span class="font-bold text-blue-600">دکتر امیررضا محمدی</span>
           </div>
           <div class="flex justify-between py-1">
             <span class="text-slate-500">شعبه ثبت:</span>

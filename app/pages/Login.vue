@@ -3,7 +3,7 @@ definePageMeta({
   layout: false
 })
 
-const username = ref('esfandiari')
+const username = ref('mohammadi')
 const password = ref('••••••••')
 const rememberMe = ref(true)
 const loginMode = ref<'password' | 'otp'>('password')
@@ -17,6 +17,7 @@ function handleLogin() {
   isSubmitting.value = true
   setTimeout(() => {
     isSubmitting.value = false
+    localStorage.setItem('maze-crm-has-logged-in-before', 'true')
     router.push('/')
   }, 600)
 }
@@ -73,7 +74,7 @@ function handleLogin() {
               v-model="username"
               required
               class="w-full py-3 pr-10 pl-4 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-mono focus:bg-white focus:border-blue-600 transition"
-              placeholder="esfandiari@biomaze.ir"
+              placeholder="mohammadi@biomaze.ir"
             />
             <ion-icon name="person-outline" class="absolute right-3.5 top-3.5 text-slate-400 text-base"></ion-icon>
           </div>
