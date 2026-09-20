@@ -1,0 +1,8 @@
+{
+  "name": "CRM Nuxt",
+  "description": "سامانه یکپارچه مدیریت فروش، اشتراک الماس، داوطلبان و آزمون‌های آنلاین موسسه آموزشی ماز (biomaze.ir)",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,20 @@
+@import "colors";
+@import "box";
+@import "header";
+@import "global_injections";
+
+* {
+  box-sizing: border-box;
+}
+
+.kalemeh {
+  font-family: 'Kalameh', sans-serif !important;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.dana {
+  font-family: 'Dana', sans-serif !important;
+}
