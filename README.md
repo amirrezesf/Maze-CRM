@@ -1,150 +1,207 @@
 <div align="center">
-   <img src="./Banner.png" alt="Maze CRM logo"  />
-   <h1>Maze CRM</h1>
-   <p><strong>سامانه یکپارچه مدیریت آموزش، فروش و داوطلبان ماز</strong></p>
-   <p>A focused, RTL CRM dashboard for managing sales, subscriptions, candidates, exams, and support workflows.</p>
-   <p>
-      <img src="https://img.shields.io/badge/Nuxt-4.2.1-00DC82?style=flat-square&logo=nuxt.js&logoColor=white" alt="Nuxt 4.2.1" />
-      <img src="https://img.shields.io/badge/Vue-3.5-42B883?style=flat-square&logo=vue.js&logoColor=white" alt="Vue 3.5" />
-      <img src="https://img.shields.io/badge/TypeScript-enabled-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-      <img src="https://img.shields.io/badge/Direction-RTL-334155?style=flat-square" alt="RTL" />
-   </p>
-   <p>
-      <a href="https://amirrezesf.github.io/Maze-CRM/">View the live demo</a>
-   </p>
+
+<img src="./Banner.png" alt="لوگوی ماز CRM" />
+
+# ماز CRM
+
+### سامانه یکپارچه مدیریت آموزش، فروش و داوطلبان ماز
+
+داشبوردی متمرکز و راست‌به‌چین برای مدیریت فروش، اشتراک‌ها، داوطلبان، آزمون‌ها و فرایندهای پشتیبانی
+
+<br />
+
+<img src="https://img.shields.io/badge/Nuxt-4.2.1-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white" alt="Nuxt 4.2.1" />
+<img src="https://img.shields.io/badge/Vue-3.5-42B883?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue 3.5" />
+<img src="https://img.shields.io/badge/TypeScript-فعال-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/badge/جهت-RTL-334155?style=for-the-badge" alt="RTL" />
+
+<br /><br />
+
+**[🚀 مشاهده نسخه دمو](https://amirrezesf.github.io/Maze-CRM/)**
+
 </div>
 
 <br />
 
-## Overview
+<div dir="rtl">
 
-Maze CRM is a Nuxt 4 dashboard for the operational side of an education business. The interface is designed for Persian-speaking teams and uses a right-to-left layout, Persian typography, sales visualizations, structured data views, and quick access to common CRM workflows.
+## 📑 فهرست مطالب
 
-**Live demo:** [amirrezesf.github.io/Maze-CRM](https://amirrezesf.github.io/Maze-CRM/)
+- [معرفی](#-معرفی)
+- [امکانات](#-امکانات)
+- [فناوری‌های استفاده‌شده](#-فناوریهای-استفادهشده)
+- [شروع سریع](#-شروع-سریع)
+- [مسیرهای برنامه](#-مسیرهای-برنامه)
+- [نحوه احراز هویت](#-نحوه-احراز-هویت)
+- [ساختار پروژه](#-ساختار-پروژه)
+- [اسکریپت‌ها](#-اسکریپتها)
+- [نکات طراحی](#-نکات-طراحی)
+- [مجوز](#-مجوز)
 
-The application currently ships as a polished front-end experience with simulated login behavior and locally persisted first-login state. It is a strong foundation for connecting real authentication, APIs, and production data services.
+---
 
-## What is included
+## 🧭 معرفی
 
-- **Dashboard:** at-a-glance sales, enrollment, subscription, and performance summaries.
-- **Sales workspace:** sales metrics, packages, and individual sales detail views.
-- **Tables:** structured CRM records for scanning and follow-up.
-- **Search:** a dedicated search workflow for finding records quickly.
-- **Leave management:** a calendar-oriented leave and availability view.
-- **Faults and support:** a space for tickets, messages, and operational follow-up.
-- **Persian-first UI:** RTL document direction with Dana, Kalameh, and Poppins font assets.
-- **Charts and date tools:** Chart.js, Vue Chart.js, Day.js, Jalali calendar support, and a Persian date picker.
-- **First-login gate:** new visitors start at `/login`; after the first successful login, the browser remembers the state with localStorage.
+**ماز CRM** یک داشبورد مبتنی بر Nuxt 4 برای بخش عملیاتی یک کسب‌وکار آموزشی است. رابط کاربری آن برای تیم‌های فارسی‌زبان طراحی شده و از چیدمان راست‌به‌چین، تایپوگرافی فارسی، نمودارهای فروش، نمایش ساختاریافته داده‌ها و دسترسی سریع به جریان‌های کاری رایج CRM بهره می‌برد.
 
-## Tech stack
+> [!NOTE]
+> این پروژه در حال حاضر به‌صورت یک تجربه‌ی فرانت‌اندی کامل ارائه می‌شود که ورود کاربر را شبیه‌سازی می‌کند و وضعیت اولین ورود را به‌صورت محلی ذخیره می‌کند. این پروژه پایه‌ای مناسب برای اتصال به احراز هویت واقعی، APIها و سرویس‌های داده‌ی عملیاتی است.
 
-| Layer | Technology |
+**🌐 نسخه نمایشی زنده:** [amirrezesf.github.io/Maze-CRM](https://amirrezesf.github.io/Maze-CRM/)
+
+---
+
+## ✨ امکانات
+
+| | بخش | توضیحات |
+| :-: | --- | --- |
+| 📊 | **داشبورد** | خلاصه‌ی یک‌نگاه از فروش، ثبت‌نام‌ها، اشتراک‌ها و عملکرد |
+| 💰 | **فضای کاری فروش** | شاخص‌های فروش، بسته‌ها و صفحه‌ی جزئیات هر فروش |
+| 🗂️ | **جدول‌ها** | رکوردهای ساختاریافته‌ی CRM برای مرور و پیگیری آسان |
+| 🔍 | **جستجو** | مسیر جستجوی اختصاصی برای یافتن سریع رکوردها |
+| 🏖️ | **مدیریت مرخصی** | نمای تقویمی برای مرخصی‌ها و وضعیت حضور |
+| 🎫 | **خطاها و پشتیبانی** | فضایی برای تیکت‌ها، پیام‌ها و پیگیری‌های عملیاتی |
+| 🔤 | **رابط فارسی‌محور** | جهت RTL همراه با فونت‌های Dana، Kalameh و Poppins |
+| 📈 | **نمودار و تاریخ** | Chart.js، Vue Chart.js، Day.js، پشتیبانی از تقویم جلالی و انتخابگر تاریخ فارسی |
+| 🔐 | **دروازه‌ی اولین ورود** | بازدیدکنندگان جدید ابتدا به `/login` هدایت می‌شوند و پس از اولین ورود موفق، وضعیت در localStorage مرورگر ذخیره می‌شود |
+
+---
+
+## 🛠️ فناوری‌های استفاده‌شده
+
+| لایه | فناوری |
 | --- | --- |
-| Framework | Nuxt 4, Vue 3, Vue Router |
-| Language | TypeScript |
-| Styling | Tailwind CSS, SCSS |
-| Charts | Chart.js, Vue Chart.js |
-| Dates | Day.js, Jalaliday, Vue Persian Date Picker |
-| Icons | Ionicons |
-| Runtime | Node.js |
+| فریم‌ورک | Nuxt 4، Vue 3، Vue Router |
+| زبان | TypeScript |
+| استایل‌دهی | Tailwind CSS، SCSS |
+| نمودارها | Chart.js، Vue Chart.js |
+| تاریخ | Day.js، Jalaliday، Vue Persian Date Picker |
+| آیکون‌ها | Ionicons |
+| محیط اجرا | Node.js |
 
-## Getting started
+---
 
-### Prerequisites
+## 🚀 شروع سریع
 
-- Node.js 20 or newer is recommended.
-- npm 10 or newer is recommended.
+### پیش‌نیازها
 
-### Install
+- Node.js نسخه‌ی ۲۰ یا بالاتر (توصیه می‌شود)
+- npm نسخه‌ی ۱۰ یا بالاتر (توصیه می‌شود)
+
+### ۱. نصب وابستگی‌ها
 
 ```bash
 npm install
 ```
 
-### Start the development server
+### ۲. اجرای سرور توسعه
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser. The Nuxt dev server is configured to listen on all interfaces, which also makes it available from another device on the local network.
+آدرس [http://localhost:3000](http://localhost:3000) را در مرورگر باز کنید. سرور توسعه‌ی Nuxt روی تمام رابط‌های شبکه گوش می‌دهد؛ بنابراین از دستگاه‌های دیگر در شبکه‌ی محلی نیز قابل دسترسی است.
 
-### Build for production
+### ۳. ساخت نسخه‌ی تولید
 
 ```bash
 npm run build
 ```
 
-Preview the production build locally with:
+برای پیش‌نمایش نسخه‌ی ساخته‌شده به‌صورت محلی:
 
 ```bash
 npm run preview
 ```
 
-For a statically generated build:
+برای ساخت نسخه‌ی استاتیک:
 
 ```bash
 npm run generate
 ```
 
-Every push to `main` is automatically generated and deployed to GitHub Pages through [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
+> [!TIP]
+> با هر push روی شاخه‌ی `main`، پروژه به‌صورت خودکار ساخته (generate) و از طریق [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) روی GitHub Pages مستقر می‌شود.
 
-## Application routes
+---
 
-| Route | Purpose |
+## 🗺️ مسیرهای برنامه
+
+| مسیر | کاربرد |
 | --- | --- |
-| `/login` | Login screen and first-visit entry point |
-| `/` | Main CRM dashboard |
-| `/sales` | Sales overview |
-| `/sales/:id` | Single sale details |
-| `/tables` | CRM data tables |
-| `/search` | Search workspace |
-| `/leave` | Leave management |
-| `/faults` | Tickets and support messages |
+| `/login` | صفحه‌ی ورود و نقطه‌ی شروع بازدید اول |
+| `/` | داشبورد اصلی CRM |
+| `/sales` | نمای کلی فروش |
+| `/sales/:id` | جزئیات یک فروش |
+| `/tables` | جدول‌های داده‌ی CRM |
+| `/search` | فضای جستجو |
+| `/leave` | مدیریت مرخصی |
+| `/faults` | تیکت‌ها و پیام‌های پشتیبانی |
 
-## Authentication behavior
+---
 
-The current demo login flow is intentionally front-end only:
+## 🔐 نحوه احراز هویت
 
-1. A visitor without the `maze-crm-has-logged-in-before` localStorage key is redirected to `/login`.
-2. A successful password or OTP form submission stores that key and navigates to the dashboard.
-3. Returning visitors are sent directly to the dashboard and cannot reopen the login page through normal navigation.
+جریان ورود فعلی در نسخه‌ی نمایشی، عمداً فقط در سمت فرانت‌اند پیاده‌سازی شده است:
 
-This mechanism is useful for the prototype experience, but it is **not a security boundary**. A production integration should replace it with server-backed authentication, secure cookies or tokens, session expiration, and permission-aware route protection.
+1. بازدیدکننده‌ای که کلید `maze-crm-has-logged-in-before` را در localStorage ندارد، به `/login` هدایت می‌شود.
+2. ارسال موفق فرم رمز عبور یا رمز یک‌بار مصرف (OTP)، این کلید را ذخیره کرده و کاربر را به داشبورد می‌برد.
+3. بازدیدکنندگان بازگشتی مستقیماً به داشبورد هدایت می‌شوند و با پیمایش عادی نمی‌توانند صفحه‌ی ورود را دوباره باز کنند.
 
-To reset the demo login state, run this in the browser console:
+> [!WARNING]
+> این سازوکار برای تجربه‌ی نمونه‌ی اولیه مفید است، اما **یک مرز امنیتی محسوب نمی‌شود**. در یک پیاده‌سازی واقعی باید آن را با احراز هویت مبتنی بر سرور، کوکی‌ها یا توکن‌های امن، انقضای نشست و محافظت از مسیرها بر پایه‌ی سطح دسترسی جایگزین کرد.
+
+برای بازنشانی وضعیت ورود در نسخه‌ی نمایشی، این دستور را در کنسول مرورگر اجرا کنید:
 
 ```js
 localStorage.removeItem('maze-crm-has-logged-in-before')
 ```
 
-## Project structure
+---
+
+## 🧱 ساختار پروژه
 
 ```text
 app/
-├── components/       Reusable dashboard, form, chart, and navigation components
-├── layouts/           Shared application layouts
-├── middleware/        Global first-login route protection
-├── pages/             Nuxt file-based routes
-├── plugins/           Client-side integrations and navigation helpers
-├── assets/            Fonts, styles, images, and visual assets
-└── types/             Nuxt and project type declarations
+├── components/       کامپوننت‌های قابل‌استفاده‌ی مجدد (داشبورد، فرم، نمودار و ناوبری)
+├── layouts/          چیدمان‌های مشترک برنامه
+├── middleware/       محافظ سراسری مسیرها برای اولین ورود
+├── pages/            مسیرهای مبتنی بر فایل Nuxt
+├── plugins/          یکپارچه‌سازی‌های سمت کلاینت و ابزارهای ناوبری
+├── assets/           فونت‌ها، استایل‌ها، تصاویر و دارایی‌های بصری
+└── types/            تعریف نوع‌های Nuxt و پروژه
 ```
 
-## Scripts
+---
 
-| Command | Description |
+## 📜 اسکریپت‌ها
+
+| دستور | توضیحات |
 | --- | --- |
-| `npm run dev` | Start the development server on port 3000 |
-| `npm run build` | Build the Nuxt application for production |
-| `npm run preview` | Preview the production build |
-| `npm run generate` | Generate a static site |
-| `npm run lint` | Run the project lint placeholder |
+| `npm run dev` | اجرای سرور توسعه روی پورت ۳۰۰۰ |
+| `npm run build` | ساخت برنامه‌ی Nuxt برای محیط تولید |
+| `npm run preview` | پیش‌نمایش نسخه‌ی تولید |
+| `npm run generate` | تولید سایت استاتیک |
+| `npm run lint` | اجرای جایگزین موقت بررسی کد (lint) |
 
-## Design notes
+---
 
-The interface is intentionally optimized for dashboard use: dense information hierarchy, quick navigation, responsive layouts, and Persian-readable type. The app uses `dir="rtl"` and `lang="fa"` at the document level, while the font assets and Tailwind utilities provide the visual foundation for the CRM screens.
+## 🎨 نکات طراحی
 
-## License
+رابط کاربری آگاهانه برای استفاده‌ی داشبوردی بهینه شده است: سلسله‌مراتب اطلاعاتی فشرده، ناوبری سریع، چیدمان‌های واکنش‌گرا و تایپوگرافی خوانا برای فارسی. برنامه در سطح سند از `dir="rtl"` و `lang="fa"` استفاده می‌کند و فونت‌ها و کلاس‌های Tailwind پایه‌ی بصری صفحه‌های CRM را می‌سازند.
 
-This project is private and does not currently include an open-source license.
+---
+
+## 📄 مجوز
+
+این پروژه خصوصی است و در حال حاضر مجوز متن‌باز ندارد.
+
+</div>
+
+<br />
+
+<div align="center">
+
+ساخته‌شده با ❤️
+
+</div>
