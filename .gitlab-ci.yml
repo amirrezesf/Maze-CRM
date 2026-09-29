@@ -1,0 +1,20 @@
+image: node:22
+
+pages:
+  stage: deploy
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - .npm/
+  script:
+    - npm ci --cache .npm --prefer-offline
+    - npm run generate
+  artifacts:
+    paths:
+      - .output/public
+  variables:
+    NUXT_APP_BASE_URL: "/$CI_PROJECT_PATH/"
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
