@@ -1,0 +1,1 @@
+import{A as e,B as t,C as n,D as r,E as i,P as a,T as o,b as s,bt as c,rt as l,t as u}from"#entry";e(),l();var d=r({__name:`error`,props:{error:Object},setup(e){let r=e;return(e,l)=>{let d=u;return a(),n(`div`,null,[s(`h1`,null,c(r.error?.statusCode),1),i(d,{to:`/`},{default:t(()=>[...l[0]||=[o(`Go back home`,-1)]]),_:1})])}}});export{d as default};

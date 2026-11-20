@@ -1,0 +1,1 @@
+var e=new URL(`404 logo.CDIDpACv.svg`,import.meta.url).href;export{e as t};
