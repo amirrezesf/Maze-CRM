@@ -34,25 +34,31 @@ export default defineNuxtConfig({
     }
   },
   app: {
-    baseURL: '/Maze-CRM',
-    
-    head: {
-      title: "CRM Nuxt - سامانه آموزش و فروش ماز",
-      meta: [
-        { name: "description", content: "سامانه یکپارچه مدیریت فروش، اشتراک الماس، داوطلبان و آزمون‌های آنلاین موسسه آموزشی ماز (biomaze.ir)" },
-        { property: "og:title", content: "CRM Nuxt - سامانه آموزش و فروش ماز" },
-        { property: "og:description", content: "سامانه یکپارچه مدیریت فروش، اشتراک الماس، داوطلبان و آزمون‌های آنلاین موسسه آموزشی ماز (biomaze.ir)" }
-      ],
-      htmlAttrs: {
-        dir: "rtl",
-        lang: "fa"
-      },
-      link: [
-        {
-          rel: "stylesheet",
-          href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        }
-      ]
+      baseURL: '/Maze-CRM',
+
+      head: {
+        title: "CRM Nuxt - سامانه آموزش و فروش ماز",
+        meta: [
+          { name: "description", content: "سامانه یکپارچه مدیریت فروش، اشتراک الماس، داوطلبان و آزمون‌های آنلاین موسسه آموزشی ماز (biomaze.ir)" },
+          { property: "og:title", content: "CRM Nuxt - سامانه آموزش و فروش ماز" },
+          { property: "og:description", content: "سامانه یکپارچه مدیریت فروش، اشتراک الماس، داوطلبان و آزمون‌های آنلاین موسسه آموزشی ماز (biomaze.ir)" }
+        ],
+        htmlAttrs: {
+          dir: "rtl",
+          lang: "fa"
+        },
+        link: [
+          {
+            rel: "stylesheet",
+            href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+          }
+        ],
+        script: [
+          {
+            type: 'module',
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/8.0.13/ionicons/ionicons.esm.js',
+          },
+        ]
+      }
     }
-  }
 });

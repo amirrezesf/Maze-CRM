@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "echo 'No lint errors'",
-    "deploy": "nuxt generate && gh-pages -d .output/public -t true"
+    "deploy": "nuxt generate && gh-pages -d .output/public --dotfiles"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.14.0",
